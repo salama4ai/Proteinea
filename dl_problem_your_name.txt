@@ -1,0 +1,3 @@
+To simplify the problem i will divide it into two subproblems, a model for each subproblem,  the first model will predict the number of year(0-9 that represent year-number of the decade), and will use 2 columns as input(leap_year_condition column, and decade), this output will concatenate with the decade to produce the year.
+
+the second one will predict the day(1-31) and the input for this model will be(1- the output of the first model(year),2- the month column, 3-the week-day )
