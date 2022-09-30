@@ -1,0 +1,27 @@
+The first question
+-She comes to you  asking about why this happened, and what she could do about it. 
+A- What is your best guess as to what happened ? 
+ i guess that the data used for training isn't representitive data for the real world,i.e the training and test data became diffrent somehow from the data used in the actual world(netflex platform), 
+1- i means that most probable a new collections of movies added to the list of movies in netflex platform, 
+2- also may be a new users start using the platform who interact differently with movies(less probable)
+
+B- What would you ask her to check to verify if your guess is true?
+check if the real world data is still similar to the training data, as example check the percentage and number of the new movies added to the list of movies, and also number of the new users and them percentage and compair them to the training data, and so on.
+
+
+C- How can she fix this problem if your guess was right ?
+she need to collect a new data that accurately represent the real-world(netflex platform) and retrain the same previous model again to levarege the thw parameters of the first training, This is akin to transfer learning
+
+==================================================================================================================
+The second question:-
+
+A- What’s your best guess about what has happened ? 
+i guess that the data used for training is completely implanced and dominate by the instances of the digit "8".
+
+B- How did the generator loss decrease and was still generating the same outputs at the same time ? 
+as the data samples is dominante be the sample of the digit "8", sothe model learn perfectly how to generate the "8" digit and most of the samples are for "8" so the loss decreasing
+
+C- What would you edit about his training process or code to avoid what happened ?
+i will ask him to train the model on balanced data, if he can add a new data to make the data balanced, that would be very good, if he can't i advice him to Resample the training set
+Under-sampling:- keeping all samples in the rare class and randomly selecting an equal number of samples in the abundant class
+Over-sampling:- increasing the size of rare samples. Rather than getting rid of abundant samples,by repetition as example.
