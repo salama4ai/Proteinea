@@ -6,5 +6,6 @@ i convert days into groups where i grouped the same week-day days into the same 
 - but what is the reasons that i group days into 10 groups?
 1- generally the less number of choices you select from, the higher probalility to get the correct selection, if you select from 2 choices it's very easier than selecting from 1000 and so on, and 10 is less than 31, so if i train the model to select from 31 choices (days), it's harder than selecting from 10 choices(group of days)
 2- every number in any group represent the same week-day for sure, so if i train the model to select from 31 days and assume that the label for a given row is the day "1" so the model will adjust it's parameters to produce the day "1" and any other number as wrong output, but that is incorrect as the day "8" or "15" or "22" is correct for the same exact row, so you will find your self train the model on partially wrong labels, but you need to train the model on the correct and exact correct labels
+instead of selecting any single random number from the list, i leave the output as a group-index to refere that the group values is all the possible correct day values, 
 
 
