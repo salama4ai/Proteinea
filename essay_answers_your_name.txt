@@ -1,4 +1,4 @@
-The first question
+The first question:-
 - She comes to you  asking about why this happened, and what she could do about it. 
 A- What is your best guess as to what happened ? 
  i guess that the data used for training isn't representitive data for the real world,i.e the training and test data became diffrent somehow from the data used in the actual world(netflex platform), 
