@@ -6,8 +6,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# $path_to_output_file = "../data/example_output.txt"
-# $path_to_input_file = "../data/example_input.txt"
+path_to_output_file = "../data/example_output.txt"
+path_to_input_file = "../data/example_input.txt"
 
 month_dictionary = {"[JAN]": 1, "[FEB]": 2, "[MAR]": 3, "[APR]": 4, "[MAY]": 5, "[JUN]": 6,
                     "[JUL]": 7, "[AUG]": 8, "[SEP]": 9, "[OCT]": 10, "[NOV]": 11, "[DEC]": 12}
@@ -27,7 +27,7 @@ groups_dict = dict(enumerate(groups))
 month_dict = {1:0, 2:3, 3:3, 4:6, 5:1, 6:4, 7:6, 8:2, 9:5, 10:0, 11:3, 12:5}
 century_dict = {17:4, 18:2, 19:0, 20:6, 21:4, 22:2, 23:0}
 
-dt = pd.read_csv($path_to_input_file, header=None)
+dt = pd.read_csv(path_to_input_file, header=None)
 # splitting every line to columns and modify some columns shape
 df = pd.DataFrame(index=range(len(dt)))
 df["weekday_name"] = [weekday_dict[row.split()[0]] for row in dt[0]]
@@ -111,8 +111,8 @@ df["predicted_day"] = [np.random.choice(groups_dict[i]) for i in df["predicted_d
 df["output"] = [str(day)+"-"+str(month)+"-"+str(year) for day, month, year in zip(df.predicted_day, df.month, df.predicted_year)]
 dt[0] = [(f"{i} {str(j)}") for i, j in zip(dt[0], df["output"])]                
 
-dt.to_csv($path_to_output_file, index=False, header=False)  
-# print(pd.read_csv(path_to_output_file))
+dt.to_csv(path_to_output_file, index=False, header=False)  
+print(pd.read_csv(path_to_output_file).head())
 
 
 ##########################################################################################################################################
