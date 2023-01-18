@@ -10,4 +10,5 @@ For this problem, i were asked to generate a **date** given a set of conditions,
 + then divide the problem into 2 subproblems:- 
 	+ [1- predicting the year submodel](https://github.com/salama4ai/Proteinea/blob/main/model/training_years.ipynb)
 	+ [2- predicting the day submodel](https://github.com/salama4ai/Proteinea/blob/main/model/training_days.ipynb)
+    
 	i started by additional preprocessing step according to the submodel needs, then separete training and test sets  fix the imbalanced data by oversampling(only on training set), the prepare data for neural network, and made traing steps finally save the results to csv file, and the training model
