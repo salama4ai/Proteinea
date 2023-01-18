@@ -3,7 +3,7 @@ Deep Learning challenge. Sent to Appicants for Deep Learning Engineer Full Time 
 For this problem, i were asked to generate a **date** given a set of conditions, using any neural network architecture i would like. my input (x) is the conditions on the date, and the output (y) is ANY date that complies with those conditions. This means that, like any generative model, there are many right answers per input x.
 [here](https://github.com/salama4ai/Proteinea/blob/main/problem%20statement/Deep%20Learning%20Challenge.pdf) is the complete problem statement 
 
-		-**Tools:** Sklearn , Matplotlib , Numpy , Pandas, pytorch, imblearn, calendar
+		- **Tools:** Sklearn , Matplotlib , Numpy , Pandas, pytorch, imblearn, calendar
         
 -**steps:** 
 + started by [Exploratory data analysis, then preprocessing](https://github.com/salama4ai/Proteinea/blob/main/model/preprocessing.ipynb)
