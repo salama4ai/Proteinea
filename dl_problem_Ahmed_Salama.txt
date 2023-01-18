@@ -1,4 +1,4 @@
-To simplify the problem i will divide it into two subproblems, a model for each subproblem,  the first submodel will predict the number of year(0-9 that represent year-number of the decade), and will use 5 columns as input(leap_year_condition, "decade4", "decade100", "decade400" and decade). 
+To simplify the problem i will divide it into two subproblems, a model for each subproblem,  the first submodel will predict the number of year(0-9 that represent year-number of the decade), and will use 5 columns as input(leap_year_condition, "decade4", "decade100", "decade400" and decade).
 
 
 the second submodel will predict the day(1-31) and the input for this model will be(1- the output of the first model(year) splited into 1-century_code and century_year where century_code is the century mapped into certain values[0, 2, 4, 6] according to this website `https://artofmemory.com/blog/how-to-calculate-the-day-of-the-week/` and also the 2-year_code which is the last 2 digits of the year engineered according to the same site,3- the month column also mapped into certain values according to the exact website, 4-the week-day, and finally 5- the leap_year_condition column)

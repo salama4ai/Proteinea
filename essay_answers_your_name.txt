@@ -10,7 +10,7 @@ check if the real world data is still similar to the training data, as example c
 
 
 C- How can she fix this problem if your guess was right ?
-she need to collect a new data that accurately represent the real-world(netflex platform) and retrain the same previous model again to levarege the thw parameters of the first training, This is akin to transfer learning
+she need to collect a new data that accurately represent the real-world(netflex platform) and retrain the same previous model again to levarege the thw parameters of the first training, This is akin to transfer learning.
 
 ==================================================================================================================
 The second question:-
