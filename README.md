@@ -12,3 +12,12 @@ For this problem, i were asked to generate a **date** given a set of conditions,
 	+ [2- predicting the day submodel](https://github.com/salama4ai/Proteinea/blob/main/model/training_days.ipynb)
     
 	i started by additional preprocessing step according to the submodel needs, then separete training and test sets  fix the imbalanced data by oversampling(only on training set), then prepare data for neural network, and made traing steps finally save the results to csv file, and the trained model
+    
+    
+this work done by Ahmed Salama at NOV-2022
+
+salama4ai@gmail.com
+
+[github.com/salama4ai](https://www.github.com/salama4ai/)
+
+[linkedin.com/in/salama4ai](https://www.linkedin.com/in/salama4ai/)
